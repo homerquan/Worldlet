@@ -1,0 +1,10 @@
+pygame>=2.5.2
+Pillow>=10.2.0
+numpy>=1.26.4
+torch
+vizdoom
+gymnasium
+opencv-python
+safetensors>=0.4.0
+torchvision
+lpips

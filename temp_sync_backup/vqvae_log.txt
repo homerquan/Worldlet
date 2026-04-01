@@ -1,0 +1,33 @@
+Training VQ-VAE on cuda...
+Total training frames: 80000
+Epoch 1/30 - Recon Loss: 0.01278 - VQ Loss: 0.16473
+Epoch 2/30 - Recon Loss: 0.00513 - VQ Loss: 0.00166
+Epoch 3/30 - Recon Loss: 0.00407 - VQ Loss: 0.00174
+Epoch 4/30 - Recon Loss: 0.00371 - VQ Loss: 0.00210
+Epoch 5/30 - Recon Loss: 0.00353 - VQ Loss: 0.00193
+Epoch 6/30 - Recon Loss: 0.00341 - VQ Loss: 0.00195
+Epoch 7/30 - Recon Loss: 0.00332 - VQ Loss: 0.00219
+Epoch 8/30 - Recon Loss: 0.00325 - VQ Loss: 0.00251
+Epoch 9/30 - Recon Loss: 0.00320 - VQ Loss: 0.00281
+Epoch 10/30 - Recon Loss: 0.00316 - VQ Loss: 0.00306
+Epoch 11/30 - Recon Loss: 0.00312 - VQ Loss: 0.00327
+Epoch 12/30 - Recon Loss: 0.00308 - VQ Loss: 0.00348
+Epoch 13/30 - Recon Loss: 0.00305 - VQ Loss: 0.00369
+Epoch 14/30 - Recon Loss: 0.00302 - VQ Loss: 0.00379
+Epoch 15/30 - Recon Loss: 0.00299 - VQ Loss: 0.00392
+Epoch 16/30 - Recon Loss: 0.00297 - VQ Loss: 0.00406
+Epoch 17/30 - Recon Loss: 0.00295 - VQ Loss: 0.00420
+Epoch 18/30 - Recon Loss: 0.00293 - VQ Loss: 0.00431
+Epoch 19/30 - Recon Loss: 0.00292 - VQ Loss: 0.00442
+Epoch 20/30 - Recon Loss: 0.00290 - VQ Loss: 0.00451
+Epoch 21/30 - Recon Loss: 0.00289 - VQ Loss: 0.00461
+Epoch 22/30 - Recon Loss: 0.00288 - VQ Loss: 0.00468
+Epoch 23/30 - Recon Loss: 0.00287 - VQ Loss: 0.00474
+Epoch 24/30 - Recon Loss: 0.00286 - VQ Loss: 0.00479
+Epoch 25/30 - Recon Loss: 0.00285 - VQ Loss: 0.00482
+Epoch 26/30 - Recon Loss: 0.00284 - VQ Loss: 0.00485
+Epoch 27/30 - Recon Loss: 0.00284 - VQ Loss: 0.00488
+Epoch 28/30 - Recon Loss: 0.00283 - VQ Loss: 0.00491
+Epoch 29/30 - Recon Loss: 0.00282 - VQ Loss: 0.00493
+Epoch 30/30 - Recon Loss: 0.00282 - VQ Loss: 0.00495
+VQ-VAE saved to models/vq_vae_doom.pth

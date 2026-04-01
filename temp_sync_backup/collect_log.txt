@@ -1,0 +1,50 @@
+Collecting 40000 transition samples from the doom environment locally...
+Starting scenario: basic
+Sample 0/5000 (Scenario: basic)
+Sample 1000/5000 (Scenario: basic)
+Sample 2000/5000 (Scenario: basic)
+Sample 3000/5000 (Scenario: basic)
+Sample 4000/5000 (Scenario: basic)
+Starting scenario: deadly_corridor
+Sample 0/5000 (Scenario: deadly_corridor)
+Sample 1000/5000 (Scenario: deadly_corridor)
+Sample 2000/5000 (Scenario: deadly_corridor)
+Sample 3000/5000 (Scenario: deadly_corridor)
+Sample 4000/5000 (Scenario: deadly_corridor)
+Starting scenario: defend_the_center
+Sample 0/5000 (Scenario: defend_the_center)
+Sample 1000/5000 (Scenario: defend_the_center)
+Sample 2000/5000 (Scenario: defend_the_center)
+Sample 3000/5000 (Scenario: defend_the_center)
+Sample 4000/5000 (Scenario: defend_the_center)
+Starting scenario: health_gathering
+Sample 0/5000 (Scenario: health_gathering)
+Sample 1000/5000 (Scenario: health_gathering)
+Sample 2000/5000 (Scenario: health_gathering)
+Sample 3000/5000 (Scenario: health_gathering)
+Sample 4000/5000 (Scenario: health_gathering)
+Starting scenario: my_way_home
+Sample 0/5000 (Scenario: my_way_home)
+Sample 1000/5000 (Scenario: my_way_home)
+Sample 2000/5000 (Scenario: my_way_home)
+Sample 3000/5000 (Scenario: my_way_home)
+Sample 4000/5000 (Scenario: my_way_home)
+Starting scenario: predict_position
+Sample 0/5000 (Scenario: predict_position)
+Sample 1000/5000 (Scenario: predict_position)
+Sample 2000/5000 (Scenario: predict_position)
+Sample 3000/5000 (Scenario: predict_position)
+Sample 4000/5000 (Scenario: predict_position)
+Starting scenario: take_cover
+Sample 0/5000 (Scenario: take_cover)
+Sample 1000/5000 (Scenario: take_cover)
+Sample 2000/5000 (Scenario: take_cover)
+Sample 3000/5000 (Scenario: take_cover)
+Sample 4000/5000 (Scenario: take_cover)
+Starting scenario: defend_the_line
+Sample 0/5000 (Scenario: defend_the_line)
+Sample 1000/5000 (Scenario: defend_the_line)
+Sample 2000/5000 (Scenario: defend_the_line)
+Sample 3000/5000 (Scenario: defend_the_line)
+Sample 4000/5000 (Scenario: defend_the_line)
+Dataset saved to data/transitions_doom.npz
