@@ -1,7 +1,7 @@
 """
-This script trains a Diffusion Transformer (DiT) World Model 
-that learns to denoise the continuous latents of the next frame. 
-It serves as a more advanced and robust generative alternative 
+This script trains a Diffusion Transformer (DiT) World Model
+that learns to denoise the continuous latents of the next frame.
+It serves as a more advanced and robust generative alternative
 to the standard discrete Autoregressive Transformer experiment.
 """
 
@@ -135,6 +135,7 @@ def train_vqvae(epochs=10, batch_size=256):
             f"VQ-VAE Epoch {epoch + 1}/{epochs} - Loss: {epoch_loss / dataset_size:.5f}"
         )
 
+    os.makedirs("models", exist_ok=True)
     save_file(model.state_dict(), "models/vq_vae_doom.safetensors")
     print("VQ-VAE saved.")
     return model
@@ -257,12 +258,47 @@ def train_dit_world(epochs=40, batch_size=256):
             f"DiT Epoch {epoch + 1}/{epochs} - Loss: {epoch_loss / dataset_size:.5f} - LR: {scheduler.get_last_lr()[0]:.6f}"
         )
 
+    os.makedirs("models", exist_ok=True)
     save_file(model.state_dict(), "models/dit_world_doom.safetensors")
     print("DiT Model saved to models/dit_world_doom.safetensors")
 
 
 if __name__ == "__main__":
-    collect_diverse_data(total_samples=100000)
-    vqvae = train_vqvae(epochs=10)
-    encode_data(vqvae)
-    train_dit_world(epochs=40)
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Train DiT World Model")
+    parser.add_argument(
+        "--samples", type=int, default=100000, help="Total samples to collect"
+    )
+    parser.add_argument(
+        "--vqvae-epochs", type=int, default=10, help="Epochs for VQ-VAE training"
+    )
+    parser.add_argument(
+        "--dit-epochs", type=int, default=40, help="Epochs for DiT training"
+    )
+    parser.add_argument(
+        "--skip-collect", action="store_true", help="Skip data collection phase"
+    )
+    parser.add_argument(
+        "--skip-vqvae", action="store_true", help="Skip VQ-VAE training phase"
+    )
+    parser.add_argument(
+        "--skip-encode", action="store_true", help="Skip data encoding phase"
+    )
+    args = parser.parse_args()
+
+    if not args.skip_collect:
+        collect_diverse_data(total_samples=args.samples)
+
+    if not args.skip_vqvae:
+        vqvae = train_vqvae(epochs=args.vqvae_epochs)
+    else:
+        vqvae = VQVAE().to(DEVICE)
+        vqvae.load_state_dict(
+            load_file("models/vq_vae_doom.safetensors", device=str(DEVICE))
+        )
+
+    if not args.skip_encode:
+        encode_data(vqvae)
+
+    train_dit_world(epochs=args.dit_epochs)
