@@ -8,7 +8,7 @@
 
 Imagine a system that doesn't just play a game, but *understands* how to generate the visual output of the game frame-by-frame entirely via a neural network. This project provides a sequence-to-sequence video prediction model trained on ViZDoom, allowing you to "play" the hallucinated game interactively. 
 
-[Watch the video](https://img.youtube.com/vi/dzzbb4pvDZk/maxresdefault.jpg)](https://youtu.be/dzzbb4pvDZk)
+[Watch the video](https://youtu.be/dzzbb4pvDZk)
 
 ---
 
