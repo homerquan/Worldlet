@@ -1,10 +1,10 @@
-# 🌍 DreamDoom: A Generative World Model
+# 🌍 Worldlet: A Generative World Model
 
-![DreamDoom Demo](docs/demo.png)
+![Worldlet Demo](docs/demo.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**DreamDoom** is an experimental prototype exploring **Generative Video Models**.
+**Worldlet** is an experimental prototype exploring **Generative Video Models**.
 
 Imagine a system that doesn't just play a game, but *understands* how to generate the visual output of the game frame-by-frame entirely via a neural network. This project provides a sequence-to-sequence video prediction model trained on ViZDoom, allowing you to "play" the hallucinated game interactively. 
 
